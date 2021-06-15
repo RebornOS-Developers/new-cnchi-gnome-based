@@ -5,7 +5,7 @@ Process to build the ISO:
 
 **1.** Clone this repo:
 ```
-git clone https://github.com/RebornOS-Developers/new-cnchi-gnome-based.git
+git clone https://github.com/RebornOS-Developers/new-cnchi-gnome-based.git && cd new-cnchi-gnome-based
 ```
 
 **2.** From terminal, run:
