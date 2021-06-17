@@ -16,4 +16,4 @@ sudo ./build.sh -v
 
 The installer ISO will be in the **out** folder (folder that will be created automatically).
 
-This installer downloads the cnchi code from the RebornOSrepository.
+This installer downloads the cnchi code from the RebornOS repository.
