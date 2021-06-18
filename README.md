@@ -1,5 +1,6 @@
-# new-cnchi-gnome-based
-new cnchi gnome based (ISO creation)
+# new-cnchi-gnome-based (ISO creation)
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/RebornOS-Developers/new-cnchi-gnome-based/main/Screenshot-20210618-1.png">
