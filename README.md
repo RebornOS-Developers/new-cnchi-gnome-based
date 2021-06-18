@@ -2,6 +2,8 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+[![Download RebornOS](https://img.shields.io/sourceforge/dd/rebornos.svg)](https://sourceforge.net/projects/rebornos/files/latest/download)
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/RebornOS-Developers/new-cnchi-gnome-based/main/Screenshot-20210618-1.png">
 </p>
