@@ -1,6 +1,10 @@
 # new-cnchi-gnome-based
 new cnchi gnome based (ISO creation)
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/RebornOS-Developers/new-cnchi-gnome-based/main/Screenshot-20210618-1.png">
+</p>
+
 Process to build the ISO:
 
 **1.** Clone this repo:
