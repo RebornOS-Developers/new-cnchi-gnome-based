@@ -4,6 +4,8 @@
 <br><br>
 Click the button to download the latest stable version from Sourceforge: [![Download RebornOS](https://img.shields.io/sourceforge/dd/rebornos.svg)](https://sourceforge.net/projects/rebornos/files/latest/download)
 
+<a href="https://osdn.net/"><img src="//osdn.net/sflogo.php?group_id=11712&type=1" width="96" height="29" border="0" alt="OSDN"></a>
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/RebornOS-Developers/new-cnchi-gnome-based/main/Screenshot-20210618-1.png">
 </p>
