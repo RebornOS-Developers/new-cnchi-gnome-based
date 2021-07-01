@@ -7,7 +7,7 @@ Click the button below to download the latest stable version from Sourceforge (T
 [![Download RebornOS](https://img.shields.io/sourceforge/dd/rebornos.svg)](https://sourceforge.net/projects/rebornos/files/latest/download)
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/RebornOS-Developers/new-cnchi-gnome-based/main/Screenshot-20210618-1.png">
+<img src="https://raw.githubusercontent.com/RebornOS-Developers/new-cnchi-gnome-based/main/Screenshot-20210630-1.png">
 </p>
 
 Dependencies required to create the ISO:
