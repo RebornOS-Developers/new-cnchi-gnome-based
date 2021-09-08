@@ -6,7 +6,7 @@ gtk-theme='Yaru'
 icon-theme='Papirus'
 
 [org.gnome.shell.extensions.user-theme]
-name='Yaru-dark'
+name='Yaru'
 
 [org.gnome.desktop.peripherals.touchpad]
 natural-scroll=true
