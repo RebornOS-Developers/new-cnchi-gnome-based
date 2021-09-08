@@ -98,7 +98,7 @@ base
 base-devel
 
 # ===>>> Cosmic packages <<<=== #
-# rebornos-cosmic-common withouth bauh (open here):
+# rebornos-cosmic-common (open here):
 acpid
 dnsmasq
 b43-fwcutter
@@ -232,9 +232,18 @@ polkit-gnome
 # Instead of pamac-aur we add bauh...
 # Removed as unnecessary in the installer
 # bauh
-# Welcome screen added:
-rebornos-welcome
+
+# RebornOS Extras
+# Welcome screen for ISO added, and rebornos-welcome deleted:
+# rebornos-welcome
+rebornos-iso-welcome
 #
+# RebornOS rate mirrors:
+rate-mirrors
+refresh-mirrors-rebornos
+
+
+
 # Themes
 papirus-icon-theme
 capitaine-cursors
@@ -300,6 +309,7 @@ fping
 # Extensions
 gnome-shell-extension-dash-to-panel
 gnome-shell-extension-appindicator
+
 
 gvfs-google
 gvfs-mtp
