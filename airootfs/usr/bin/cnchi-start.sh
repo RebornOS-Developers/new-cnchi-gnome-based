@@ -1,4 +1,8 @@
 #!/bin/bash
+sudo rm -rf /etc/pacman.d/gnupg
+sudo pacman-key --init
+sudo pacman-key --populate archlinux rebornos
+sudo pacman -Syy
 sudo pacman -S cnchi-urlfix --noconfirm
 sudo pacman -S cnchi-mirrors --noconfirm
 sudo cp -r /home/rebornos/Downloads/reborn-mirrorlist /etc/pacman.d/reborn-mirrorlist
