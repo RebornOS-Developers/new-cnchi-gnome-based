@@ -1,7 +1,7 @@
 Modify /usr/bin/refresh-keys.sh file.
 Original content:
 
-gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.gedit.desktop', 'gparted.desktop', 'rebornos-install.desktop', 'rebornos-install-2.desktop', 'rebornos-welcome.desktop', 'org.gnome.Terminal.desktop']"
+gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.gedit.desktop', 'gparted.desktop', 'rebornos-install.desktop', 'rebornos-install-2.desktop', 'rebornos-iso-welcome.desktop', 'org.gnome.Terminal.desktop']"
 sudo systemctl enable --now NetworkManager.service
 sudo systemctl enable --now bluetooth.service
 sudo rm -rf /etc/pacman.d/gnupg
@@ -10,14 +10,38 @@ sudo pacman-key --populate archlinux rebornos
 sudo pacman -Syy
 sudo cnchi-start.sh
 
-Remove "sudo cnchi-start.sh", and rebornos-iso-welcome added so that the installer starts from the welcome screen:
+File modified to:
 
-gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.gedit.desktop', 'gparted.desktop', 'rebornos-install.desktop', 'rebornos-install-2.desktop', 'rebornos-welcome.desktop', 'org.gnome.Terminal.desktop']"
+gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.gedit.desktop', 'gparted.desktop', 'rebornos-install.desktop', 'rebornos-install-2.desktop', 'rebornos-iso-welcome.desktop', 'org.gnome.Terminal.desktop']"
 sudo systemctl enable --now NetworkManager.service
 sudo systemctl enable --now bluetooth.service
+
+
+In /usr/bin/cnchi-start, added:
+
 sudo rm -rf /etc/pacman.d/gnupg
 sudo pacman-key --init
 sudo pacman-key --populate archlinux rebornos
 sudo pacman -Syy
-# sudo cnchi-start.sh
-rebornos-iso-welcome
+
+Contect of /usr/bin/cnchi-start:
+
+#!/bin/bash
+sudo rm -rf /etc/pacman.d/gnupg
+sudo pacman-key --init
+sudo pacman-key --populate archlinux rebornos
+sudo pacman -Syy
+sudo pacman -S cnchi-urlfix --noconfirm
+sudo pacman -S cnchi-mirrors --noconfirm
+sudo cp -r /home/rebornos/Downloads/reborn-mirrorlist /etc/pacman.d/reborn-mirrorlist
+sudo cp -r /home/rebornos/Downloads/mirrorlist /etc/pacman.d/mirrorlist
+sudo chmod 644 /etc/pacman.d/reborn-mirrorlist
+sudo chmod 644 /etc/pacman.d/mirrorlist
+sudo rm /home/rebornos/Downloads/reborn-mirrorlist
+sudo rm /home/rebornos/Downloads/mirrorlist
+sudo chmod 644 /etc/pacman.conf
+sudo chmod 0777 /usr/share/cnchi/scripts/ckbcomp
+sudo -E /usr/bin/python -Wall /usr/share/cnchi/src/cnchi.py -dvz --no-check --packagelist /usr/share/cnchi/data/packages.xml
+
+
+
