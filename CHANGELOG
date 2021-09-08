@@ -45,3 +45,79 @@ sudo -E /usr/bin/python -Wall /usr/share/cnchi/src/cnchi.py -dvz --no-check --pa
 
 Folder /home/rebornos/.rebornos-welcome deleted
 
+
+
+
+Change /usr/share/glib-2.0/schemas/101_gnome.gschema.override file.
+Original:
+
+[org.gnome.desktop.interface]
+clock-format='24h'
+clock-show-date=true
+clock-show-seconds=false
+gtk-theme='Yaru'
+icon-theme='Papirus'
+
+[org.gnome.shell.extensions.user-theme]
+name='Yaru-dark'
+
+[org.gnome.desktop.peripherals.touchpad]
+natural-scroll=true
+tap-to-click=true
+
+[org.gnome.desktop.screensaver]
+lock-enabled=false
+
+[org.gnome.desktop.session]
+idle-delay=0
+
+[org.gnome.desktop.datetime]
+automatic-timezone=true
+
+[org.gnome.desktop.input-sources]
+sources=[('xkb','us')]
+
+[org.gnome.desktop.wm.preferences]
+button-layout='appmenu:minimize,maximize,close'
+theme='Yaru'
+
+[org.gnome.nautilus.preferences]
+show-create-link=true
+
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/backgrounds/gnome/adwaita-day.jpg'
+
+[org.gnome.software]
+download-updates = false
+allow-updates = false
+show-ratings = true
+
+[org.gnome.shell]
+enabled-extensions=['dash-to-panel@jderose9.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.gedit.desktop', 'gparted.desktop', 'rebornos-install.desktop', 'rebornos-install-2.desktop', 'rebornos-welcome.desktop', 'org.gnome.Terminal.desktop']
+always-show-log-out=true
+
+
+[org.gnome.mutter]
+center-new-windows = true
+dynamic-workspaces = true
+
+[org.gnome.shell.extensions.activities-config]
+activities-config-button-no-text=true
+
+[org.gnome.settings-daemon.plugins.power]
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-type='nothing'
+
+
+Here, change:
+
+[org.gnome.shell.extensions.user-theme]
+name='Yaru-dark'
+
+
+...to:
+
+[org.gnome.shell.extensions.user-theme]
+name='Yaru'
+
