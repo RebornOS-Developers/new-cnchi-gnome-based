@@ -15,6 +15,12 @@ File modified to (desktop file rebornos-welcome changed to rebornos-iso-welcome)
 gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.gedit.desktop', 'gparted.desktop', 'rebornos-install.desktop', 'rebornos-install-2.desktop', 'rebornos-iso-welcome.desktop', 'org.gnome.Terminal.desktop']"
 sudo systemctl enable --now NetworkManager.service
 sudo systemctl enable --now bluetooth.service
+sudo rm -rf /etc/pacman.d/gnupg
+sudo pacman-key --init
+sudo pacman-key --populate archlinux rebornos
+sudo pacman -Syy
+cd /opt/rebornos-iso-welcome
+python main.py --iso
 
 
 In /usr/bin/cnchi-start, added:
@@ -24,13 +30,9 @@ sudo pacman-key --init
 sudo pacman-key --populate archlinux rebornos
 sudo pacman -Syy
 
-Contect of /usr/bin/cnchi-start:
+Content of /usr/bin/cnchi-start:
 
 #!/bin/bash
-sudo rm -rf /etc/pacman.d/gnupg
-sudo pacman-key --init
-sudo pacman-key --populate archlinux rebornos
-sudo pacman -Syy
 sudo pacman -S cnchi-urlfix --noconfirm
 sudo pacman -S cnchi-mirrors --noconfirm
 sudo cp -r /home/rebornos/Downloads/reborn-mirrorlist /etc/pacman.d/reborn-mirrorlist
@@ -43,7 +45,8 @@ sudo chmod 644 /etc/pacman.conf
 sudo chmod 0777 /usr/share/cnchi/scripts/ckbcomp
 sudo -E /usr/bin/python -Wall /usr/share/cnchi/src/cnchi.py -dvz --no-check --packagelist /usr/share/cnchi/data/packages.xml
 
-Folder /home/rebornos/.rebornos-welcome deleted
+
+Folder /home/rebornos/.rebornos-welcome re-added
 
 
 
@@ -120,4 +123,26 @@ name='Yaru-dark'
 
 [org.gnome.shell.extensions.user-theme]
 name='Yaru'
+
+
+
+
+
+
+Content of file settings.json in /home/rebornos/.rebornos-welcome/configuration/ :
+
+{
+    "ui-toolkits": {
+        "available": [
+            "gtk"
+        ],
+        "default": "gtk",
+        "current": "gtk"
+    },
+    "log_directory": "log/",
+    "auto_start_enabled": false,
+    "current_log_file_path": "log/welcome_app-2021-09-09_11_27_31_-03.log",
+    "current_working_directory": "/opt/rebornos-iso-welcome"
+}
+
 
