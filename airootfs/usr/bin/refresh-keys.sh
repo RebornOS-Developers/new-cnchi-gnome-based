@@ -6,5 +6,4 @@ sudo rm -rf /etc/pacman.d/gnupg
 sudo pacman-key --init
 sudo pacman-key --populate archlinux rebornos
 sudo pacman -Syy
-cd /opt/rebornos-iso-welcome
-python main.py --iso
+rebornos-iso-w
