@@ -234,9 +234,9 @@ polkit-gnome
 # bauh
 
 # RebornOS Extras
-# Welcome screen for ISO added, and rebornos-welcome deleted:
-# rebornos-welcome
-rebornos-iso-welcome
+# Welcome screen for ISO deleted, and rebornos-welcome added (ISO Welcome freezes cnchi):
+rebornos-welcome
+# rebornos-iso-welcome
 #
 # RebornOS rate mirrors:
 rate-mirrors
