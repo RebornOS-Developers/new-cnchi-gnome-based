@@ -234,8 +234,8 @@ polkit-gnome
 # bauh
 
 # RebornOS Extras
-# Welcome screen
-rebornos-welcome
+# Welcome ISO screen
+rebornos-iso-welcome
 #
 # RebornOS rate mirrors:
 rate-mirrors
