@@ -456,3 +456,6 @@ qt5-webengine
 yaml-cpp
 extra-cmake-modules
 boost
+
+# ===>>> cnchi <<<=== #
+new-cnchi
