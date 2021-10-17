@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S cnchi-urlfix --noconfirm
+# sudo pacman -S cnchi-urlfix --noconfirm
 sudo pacman -S cnchi-mirrors --noconfirm
 sudo cp -r /home/rebornos/Downloads/reborn-mirrorlist /etc/pacman.d/reborn-mirrorlist
 sudo cp -r /home/rebornos/Downloads/mirrorlist /etc/pacman.d/mirrorlist
