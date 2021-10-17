@@ -32,7 +32,8 @@ rm /etc/pacman.conf
 cp pacman.conf /etc/pacman.conf
 rm pacman.conf
 rm /home/rebornos/.bashrc
-cp /usr/share/cnchi/bashrc /home/rebornos/.bashrc
+cp /home/rebornos/Downloads/bashrc /home/rebornos/.bashrc
+rm /home/rebornos/Downloads/bashrc
 locale-gen
 "
 }
