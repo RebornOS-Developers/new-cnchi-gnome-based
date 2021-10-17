@@ -7,5 +7,5 @@ sudo pacman-key --init
 sudo pacman-key --populate archlinux rebornos
 sudo pacman -Syy
 sudo pacman -S new-cnchi --noconfirm
-rebornos-iso-welcome
-# sudo cnchi-start.sh
+# rebornos-iso-welcome
+sudo cnchi-start.sh
