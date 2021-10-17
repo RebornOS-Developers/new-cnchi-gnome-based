@@ -235,7 +235,7 @@ polkit-gnome
 
 # RebornOS Extras
 # Welcome ISO screen
-rebornos-iso-welcome
+rebornos-welcome
 #
 # RebornOS rate mirrors:
 rate-mirrors
