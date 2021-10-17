@@ -458,4 +458,5 @@ extra-cmake-modules
 boost
 
 # ===>>> cnchi <<<=== #
-new-cnchi
+# Now it loads from the ISO...
+#new-cnchi
