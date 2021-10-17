@@ -6,4 +6,6 @@ sudo rm -rf /etc/pacman.d/gnupg
 sudo pacman-key --init
 sudo pacman-key --populate archlinux rebornos
 sudo pacman -Syy
-sudo cnchi-start.sh
+sudo pacman -S new-cnchi --noconfirm
+rebornos-iso-welcome
+# sudo cnchi-start.sh
