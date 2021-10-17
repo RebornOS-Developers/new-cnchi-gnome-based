@@ -245,13 +245,13 @@ refresh-mirrors-rebornos
 
 # Themes
 papirus-icon-theme
-capitaine-cursors
+#capitaine-cursors
 #arc-gtk-theme
-yaru-gnome-shell-theme
-yaru-gtk-theme
-yaru-icon-theme
-yaru-session
-yaru-sound-theme
+#yaru-gnome-shell-theme
+#yaru-gtk-theme
+#yaru-icon-theme
+#yaru-session
+#yaru-sound-theme
 #
 # Continue...
 # In our repo:
